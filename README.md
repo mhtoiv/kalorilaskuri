@@ -1,6 +1,6 @@
-#Build löytyy osoitteesta https://mhtoiv.github.io/kalorilaskuri/
+# Build löytyy osoitteesta https://mhtoiv.github.io/kalorilaskuri/
 
-##Käyttö:
+## Käyttö:
 etsi haluamaasi aineosaa / raaka-ainetta, ja klikkaa sitä. Syötä haluttu grammamäärä ja
 sovellus laskee ravintoarvot. Kaikki tiedot ovat viitteellisiä.
 
