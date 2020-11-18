@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import Search from "./Components/Search";
+import Display from "./Components/Display";
+
 
 function App() {
+
+    const [selected, setSelected] = useState([]);
+
+    useEffect(() => {
+        console.log("selected updated");
+    }, [selected])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="relative">
+
+      <header>
+          <h1>
+              Kalorilaskuri
+          </h1>
       </header>
+
+        <div className="container">
+
+            <div className="flex-nocenter">
+
+                <div className="search-box">
+                    <Search selected={selected} setSelected={setSelected}/>
+                </div>
+
+                <div className="info-box">
+                    <Display selected={selected} setSelected={setSelected}/>
+                </div>
+
+            </div>
+
+        </div>
     </div>
   );
 }
